@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="header">
+    Supermarket inventory management system
+</div>
+<div class="contain">
+    <p class="l-title">
+        <span class="before">
+        </span>
+        Good Detail Info
+    </p>
+    <p class="detail">
+        <span>Name:</span>
+        <input type="text" id="name" value="{{good.name}}">
+    </p>
+    <p class="detail">
+        <span>Price:</span>
+        <input type="text" id="price" value="{{good.price}}">
+    </p>
+    <p class="detail">
+        <span>Stock:</span>
+        <input type="text" id="stock" value="{{good.stock}}">
+    </p>
+    <p class="detail">
+        <span>Place:</span>
+        <input type="text" id="place" value="{{good.place}}">
+    </p>
+    <p class="detail">
+        <span>Warehousing Date:</span>
+        <input type="text" id="store_time" value="{{good.store_time}}">
+    </p>
+    <p class="detail">
+        <span>Expiration Date:</span>
+        <input type="text" id="expire_time" value="{{good.expire_time}}">
+    </p>
+    <button class="l-add" onclick="update({{good_id}})">Update</button>
+</div>
+</body>
+</html>
+<script src="/static/js/script.js">
+</script>

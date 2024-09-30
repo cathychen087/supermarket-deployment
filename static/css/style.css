@@ -1,0 +1,117 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #e5e5e5;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.header {
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contain {
+    width: 70%;
+    height: 100%;
+    background: white;
+}
+
+.table_header {
+    font-weight: 700;
+    font-size: 24px;
+    border-bottom: 1px solid gray
+
+}
+
+span {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+}
+
+p.good {
+    margin: 0;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+p.good:nth-child(2n) {
+    background: #f1f1f1;
+}
+
+p.good:hover {
+    background: #e5e5e5;
+}
+
+.info {
+    width: 60px;
+    padding: 5px 0;
+    cursor: pointer;
+    background: skyblue;
+}
+
+.update {
+    width: 60px;
+    padding: 5px 0;
+    background: aquamarine;
+    cursor: pointer;
+}
+
+.delete {
+    width: 60px;
+    padding: 5px 0;
+    cursor: pointer;
+    background: red;
+}
+
+.before {
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    background: blue;
+    margin: 0 10px;
+}
+
+.detail {
+    padding: 5px 10px;
+}
+
+.detail span {
+    width: auto;
+}
+
+.add {
+    background: blue;
+    color: white;
+    height: 28px
+}
+
+.l-add {
+    margin-left: 10px;
+    background: skyblue;
+}
+
+.log {
+    background: #f36606;
+    color: white;
+    height: 28px;
+}
+
+.ltitle {
+    font-weight: 700;
+    font-size: 18px;
+}

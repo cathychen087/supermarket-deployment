@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="header">
+    Supermarket inventory management system
+    <div>
+        <button class="add" onclick="add()">
+            Add New
+        </button>
+        <button class="log" onclick="logInfo()">
+            Log Info
+        </button>
+    </div>
+
+</div>
+<div class="contain">
+    <p class="table_header">
+        <span>
+            Name
+        </span>
+        <span>
+            Price
+        </span>
+        <span>
+            Stock
+        </span>
+        <span>
+            Place
+        </span>
+        <span>
+            Option
+        </span>
+
+    </p>
+    {% for good in good_list.keys() %}
+    <p class="good">
+        <span>{{good_list[good].name}}</span>
+        <span>{{good_list[good].price}}</span>
+        <span>{{good_list[good].stock}}</span>
+        <span>{{good_list[good].place}}</span>
+        <span>
+            <button class="info" onclick="goodInfo({{good}})">
+                Info
+            </button>
+             <button class="update" onclick="updateInfo({{good}})">
+                Update
+            </button>
+            <button class="delete" onclick="deleteGood({{good}})">
+                Delete
+            </button>
+        </span>
+    </p>
+    {% endfor %}
+</div>
+</body>
+</html>
+<script src="/static/js/script.js"></script>

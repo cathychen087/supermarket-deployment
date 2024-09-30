@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="header">
+    Supermarket inventory management system
+</div>
+<div class="contain">
+    <p class="table_header">
+        <span>
+            Name
+        </span>
+        <span>
+            Price
+        </span>
+        <span>
+            Stock
+        </span>
+        <span>
+            Place
+        </span>
+         <span>
+            Log Type
+        </span>
+
+    </p>
+    {% for good in log_list%}
+    <p class="good">
+        <span>{{good.name}}</span>
+        <span>{{good.price}}</span>
+        <span>{{good.stock}}</span>
+        <span>{{good.place}}</span>
+        <span>
+            <button class="">
+                {{good.cls_}}
+            </button>
+        </span>
+    </p>
+    {% endfor %}
+</div>
+</body>
+</html>
+<script src="/static/js/script.js"></script>

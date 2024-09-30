@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="header">
+    Supermarket inventory management system
+</div>
+<div class="contain">
+    <p class="l-title">
+        <span class="before">
+        </span>
+        Add New Good
+    </p>
+    <p class="detail">
+        <span>Name:</span>
+        <input id="name" placeholder="enter good name">
+    </p>
+    <p class="detail">
+        <span>Price:</span>
+        <input id="price" placeholder="enter good price">
+    </p>
+    <p class="detail">
+        <span>Stock:</span>
+        <input id="stock" placeholder="enter good stock">
+    </p>
+    <p class="detail">
+        <span>Place:</span>
+        <input id="place" placeholder="enter good place">
+    </p>
+    <p class="detail">
+        <span>Warehousing Date:</span>
+        <input id="store_time" placeholder="enter good warehousing date" type="date">
+    </p>
+    <p class="detail">
+        <span>Expiration Date:</span>
+        <input id="expire_time" placeholder="enter good expiration date" type="date"  pattern="yyyy-MM-dd">
+    </p>
+    <button class="l-add" onclick="addData()">Add New</button>
+
+</div>
+</body>
+</html>
+<script src="/static/js/script.js"></script>
